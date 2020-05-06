@@ -38,7 +38,7 @@ server:
   # network interface. This allows nsd to start even if the network stack
   # isn't fully ready, which apparently happens in some cases.
   # See https://www.nlnetlabs.nl/projects/nsd/nsd.conf.5.html.
-  ip-transparent: yes
+  #ip-transparent: yes
 
 EOF
 

@@ -149,6 +149,7 @@ if [ -z "${PUBLIC_IPV6:-}" ]; then
 			exit
 		fi
 	fi
+	PUBLIC_IPV6=""
 fi
 
 # Get the IP addresses of the local network interface(s) that are connected
@@ -159,6 +160,7 @@ if [ -z "${PRIVATE_IP:-}" ]; then
 fi
 if [ -z "${PRIVATE_IPV6:-}" ]; then
 	PRIVATE_IPV6=$(get_default_privateip 6)
+	PRIVATE_IPV6=""
 fi
 if [[ -z "$PRIVATE_IP" && -z "$PRIVATE_IPV6" ]]; then
 	echo
